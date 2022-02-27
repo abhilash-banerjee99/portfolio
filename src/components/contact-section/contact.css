@@ -1,0 +1,17 @@
+.section-four {
+  padding: 10rem;
+  width: 100%;
+  background-color: #1b1e32;
+  color: #fff;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.list__item .list__item--link {
+  color: #fff;
+  /* text-decoration: none; */
+}

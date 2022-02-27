@@ -1,0 +1,32 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb {
+  width: 100%;
+  justify-self: flex-start;
+  align-items: center;
+  /* border: 2px solid limegreen; */
+}
+
+.col2 {
+  font-size: 0.9rem;
+  width: 100%;
+}
+.col1 + .col2 {
+  margin-left: 1rem;
+}
+
+.line {
+  padding: 0.1rem;
+  width: 50px;
+  margin-left: 1px;
+  background-color: #ef2844 !important;
+}
