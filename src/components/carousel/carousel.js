@@ -4,24 +4,24 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import './carousel.css';
 
 const Carousel = () => {
-  // let slides = document.querySelectorAll('.slide-container');
-  // let index = 0;
+  let slides = document.querySelectorAll('.slide-container');
+  let index = 0;
 
   // // next function
 
-  // function next() {
-  //   slides[index].classList.remove('active');
-  //   index = (index + 1) % slides.length;
-  //   slides[index].classList.add('active');
-  // }
+  function next() {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }
 
   // // previous function
 
-  // function prev() {
-  //   slides[index].classList.remove('active');
-  //   index = (index - 1 + slides.length) % slides.length;
-  //   slides[index].classList.add('active');
-  // }
+  function prev() {
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+  }
 
   return (
     <div className="carousel-container">
@@ -90,10 +90,10 @@ const Carousel = () => {
           </div>
         </div>
       </div>
-      <div id="prev" /*onClick={prev()}*/>
+      <div id="prev" onClick={prev}>
         <FontAwesomeIcon icon={faAngleLeft} />{' '}
       </div>
-      <div id="next" /*onClick={next()}*/>
+      <div id="next" onClick={next}>
         <FontAwesomeIcon icon={faAngleRight} />
       </div>
     </div>
